@@ -25,7 +25,7 @@ func MaskURL(url string) string {
 }
 
 func containsPrefix(buffer []byte, prefix []byte, start int) bool {
-	if start+len(buffer) > len(prefix) {
+	if start+len(prefix) > len(buffer) {
 		return false
 	}
 
